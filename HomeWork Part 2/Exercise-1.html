@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#box").animate({height: "300px"});
+    $("#box").animate({width: "400px"});
+  });
+  $("#btn2").click(function(){
+    $("#box").animate({height: "100px"});
+  });
+  $("#btn3").click(function(){
+    $("#box").animate({width: "100px"});
+  });
+});
+</script>
+</head>
+<body>
+<p><strong style="color: chartreuse;">&#10004; Compeleted</strong> In this exercise, add two more buttons with the text "Animate width" (which will set the width as 400px) and "Reset width" (which will bring the width back to 100px). For the "Animate width" button use the id name "btn3"; and for the "Reset width" button use the id name "btn4".</p> 
+
+<button id="btn1">Animate height</button>
+<button id="btn2">Reset height</button>
+<button id="btn3">Reset width</button>
+
+<div id="box" style="background:#98bf21;height:100px;width:100px;margin:6px;"></div>
+
+</body>
+</html>

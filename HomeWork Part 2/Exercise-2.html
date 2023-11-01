@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#start").click(function(){
+    $("div").animate({height: 500}, 2000);
+    $("div").animate({width: 500}, 2000);
+    /*If we change these height:200 and width:200 values, when the animation is finished, it will draw a shape in these dimensions.*/
+    $("div").animate({height: 200}, 2000);
+    $("div").animate({width: 200}, 2000);
+    
+    //$("div").animate({duration:40000});
+  });
+  $("#stop").click(function(){
+    $("div").clearQueue();
+  });
+});
+</script> 
+</head>
+<body>
+<p> <strong style="color: chartreuse;">&#10004; Compeleted</strong> In this exercise, change the original width and height of the div element as 200 pixels. Then, for the "animate height" and "animate width" methods, set the new width and new height as 500 pixels, and set the duration time of the effect as 2 seconds (2000 milliseconds).</p>
+
+<button id="start">Start Animation</button>
+<button id="stop">Stop Animation</button>
+<br><br>
+
+<div style="background:red;height:200px;width:200px;"></div>
+ 
+</body>
+</html>

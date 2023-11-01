@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({
+      left: '300px',
+      height: '+=200px',
+      width: '+=200px',
+      
+    });
+    $("div").css("background-color","blue");
+  });
+});
+</script> 
+</head>
+<body>
+<p> <strong style="color: chartreuse;">&#10004; Compeleted</strong> In this exercise, change the "left" margin value of the animate method as 300 pixels, and add 200 pixels to both the original height and the original width of the div element. Within the effect's function, add another code line with the selector value $(&quot;div&quot;) and the CSS method to change the background color of the div element as blue.</p>
+
+<button>Start Animation</button>
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("button").click(function(){
+    var div = $("div");  
+    div.animate({left: '200px'}, "1200");
+    div.animate({fontSize: '4em'}, "1200");
+  });
+});
+</script> 
+</head>
+<body>
+<p><strong style="color: chartreuse;">&#10004; Compeleted</strong> In this exercise, set the text as "YEDITEPE", set the original width of the div as 300px, set the original height of the div as 150px. For the animate method, set the left margin as 200px and the duration time as 1200 milliseconds; and set the fontSize as 4em and the duration time as 1200 milliseconds.</p> 
+
+<button>Start Animation</button>
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div style="background:#98bf21;height:150px;width:300px;position:absolute;">YEDITEPE</div>
+
+</body>
+</html>

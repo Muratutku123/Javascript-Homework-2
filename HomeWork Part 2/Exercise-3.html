@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeToggle();
+    $("#div2").fadeToggle("slow");
+    $("#div3").fadeToggle(2800);
+    $("#div4").fadeToggle("fast");
+  });
+});
+</script>
+</head>
+<body>
+
+<p><strong style="color: chartreuse;">&#10004; Compeleted</strong> In this exercise, add a fourth div element with the id name "div4" with the background color yellow and set its fadeToggle method speed as "fast". Change the fadeToggle method speed of the div element with the id name "div3" as 2.8 seconds.</p>
+
+<button>Click to fade in/out boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+<br>
+<div id="div4" style="width:80px;height:80px;background-color:yellow;"></div>
+
+</body>
+</html>
